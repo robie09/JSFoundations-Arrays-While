@@ -102,13 +102,11 @@ function secondHalfOfArrayIfItIsEven(fruits) {
  */
 function youGottaCalmDown(shout) {
   // Your code here
-  while(shout.endwith("!")){
-shout.pop();
-    
+  if(shout.endsWith("!")){
+    let index =shout.indexOf("!");
+    return shout.slic(0, index +1);
   }
-  shout.push("!");
   return shout;
-  
 }
 
 module.exports = {
